@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Model_Blog extends Mage_Core_Model_Abstract {
+class Cmac_Blog_Model_Blog extends Mage_Core_Model_Abstract {
 
     public function _construct() {
         parent::_construct();
@@ -18,7 +18,7 @@ class Indez_Blog_Model_Blog extends Mage_Core_Model_Abstract {
 
     public function getShortContent() {
         $content = $this->getData('short_content');
-        if (Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_BLOG_PARSE_CMS)) {
+        if (Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_BLOG_PARSE_CMS)) {
             $processor = Mage::getModel('core/email_template_filter');
             $content = $processor->filter($content);
         }
@@ -27,7 +27,7 @@ class Indez_Blog_Model_Blog extends Mage_Core_Model_Abstract {
 
     public function getPostContent() {
         $content = $this->getData('post_content');
-        if (Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_BLOG_PARSE_CMS)) {
+        if (Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_BLOG_PARSE_CMS)) {
             $processor = Mage::getModel('core/email_template_filter');
             $content = $processor->filter($content);
         }

@@ -3,18 +3,18 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Controller_Router extends Mage_Core_Controller_Varien_Router_Abstract {
+class Cmac_Blog_Controller_Router extends Mage_Core_Controller_Varien_Router_Abstract {
 
     public function initControllerRouters($observer) {
         $front = $observer->getEvent()->getFront();
 
-        $blog = new Indez_Blog_Controller_Router();
+        $blog = new Cmac_Blog_Controller_Router();
         $front->addRouter('blog', $blog);
     }
 

@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Block_Post extends Mage_Core_Block_Template {
+class Cmac_Blog_Block_Post extends Mage_Core_Block_Template {
 
     private $_pageCount = 1;
     private $_totalCommentsCount = null;
@@ -25,7 +25,7 @@ class Indez_Blog_Block_Post extends Mage_Core_Block_Template {
             }
 
             /* Escape special chars */
-            Indez_Blog_Helper_Data::escapeSpecialChars($post);
+            Cmac_Blog_Helper_Data::escapeSpecialChars($post);
             /*             * *************************** */
 
 

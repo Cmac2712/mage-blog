@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Model_Api extends Mage_Core_Model_Abstract {
+class Cmac_Blog_Model_Api extends Mage_Core_Model_Abstract {
 
     public function _construct() {
 
@@ -59,13 +59,13 @@ class Indez_Blog_Model_Api extends Mage_Core_Model_Abstract {
 
         $content = $post->getPostContent();
 
-        if (Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_BLOG_USESHORTCONTENT, $storeId) && trim($post->getShortContent())) {
+        if (Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_BLOG_USESHORTCONTENT, $storeId) && trim($post->getShortContent())) {
 
             $content = trim($post->getShortContent());
-        } elseif ((int) Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_BLOG_READMORE, $storeId)) {
+        } elseif ((int) Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_BLOG_READMORE, $storeId)) {
 
-            $strManager = new Indez_Blog_Helper_Substring(array('input' => Mage::helper('blog')->filterWYS($post->getPostContent())));
-            $content = $strManager->getHtmlSubstr((int) Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_BLOG_READMORE));
+            $strManager = new Cmac_Blog_Helper_Substring(array('input' => Mage::helper('blog')->filterWYS($post->getPostContent())));
+            $content = $strManager->getHtmlSubstr((int) Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_BLOG_READMORE));
         }
 
         return $content;

@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Test_Helper_Substring extends EcomDev_PHPUnit_Test_Case {
+class Cmac_Blog_Test_Helper_Substring extends EcomDev_PHPUnit_Test_Case {
 
     /**
      *  @test
@@ -18,7 +18,7 @@ class Indez_Blog_Test_Helper_Substring extends EcomDev_PHPUnit_Test_Case {
      */
     public function getHtmlSubstr($data) {
 
-        $strManager = new Indez_Blog_Helper_Substring(array('input' => $data['string']));
+        $strManager = new Cmac_Blog_Helper_Substring(array('input' => $data['string']));
         $content = $strManager->getHtmlSubstr($data['substr']);
 
         $this->assertEquals(mb_strtolower($content, mb_detect_encoding($content)), mb_strtolower($data['expected'], mb_detect_encoding($content)));

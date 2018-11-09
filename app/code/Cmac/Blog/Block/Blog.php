@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Block_Blog extends Indez_Blog_Block_Abstract {
+class Cmac_Blog_Block_Blog extends Cmac_Blog_Block_Abstract {
 
     public function getPosts() {
 
@@ -41,7 +41,7 @@ class Indez_Blog_Block_Blog extends Indez_Blog_Block_Abstract {
 
     public function getRecent() {
 
-        if (Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_RECENT_SIZE) != 0) {
+        if (Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_RECENT_SIZE) != 0) {
             $collection = Mage::getModel('blog/blog')->getCollection()
                     ->addPresentFilter()
                     ->addStoreFilter(Mage::app()->getStore()->getId())
@@ -50,7 +50,7 @@ class Indez_Blog_Block_Blog extends Indez_Blog_Block_Abstract {
             $route = Mage::helper('blog')->getRoute();
 
             Mage::getSingleton('blog/status')->addEnabledFilterToCollection($collection);
-            $collection->setPageSize(Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_RECENT_SIZE));
+            $collection->setPageSize(Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_RECENT_SIZE));
             $collection->setCurPage(1);
             foreach ($collection as $item) {
                 $item->setAddress($this->getUrl($route . "/" . $item->getIdentifier()));

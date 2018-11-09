@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Block_Abstract extends Mage_Core_Block_Template {
+class Cmac_Blog_Block_Abstract extends Mage_Core_Block_Template {
 
     protected function _processCollection($collection, $category = false) {
 
@@ -18,7 +18,7 @@ class Indez_Blog_Block_Abstract extends Mage_Core_Block_Template {
         foreach ($collection as $item) {
 
             /* Escape tags */
-           Indez_Blog_Helper_Data::escapeSpecialChars($item);
+           Cmac_Blog_Helper_Data::escapeSpecialChars($item);
 
 
             if ($category) {
@@ -34,18 +34,18 @@ class Indez_Blog_Block_Abstract extends Mage_Core_Block_Template {
             $item->setCreatedTime($this->formatTime($item->getCreatedTime(), Mage::getStoreConfig('blogconfig/blog/dateformat'), true));
             $item->setUpdateTime($this->formatTime($item->getUpdateTime(), Mage::getStoreConfig('blogconfig/blog/dateformat'), true));
 
-            if (Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_BLOG_USESHORTCONTENT) && trim($item->getShortContent())) {
+            if (Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_BLOG_USESHORTCONTENT) && trim($item->getShortContent())) {
                 $content = trim($item->getShortContent());
                 $content = $this->closetags($content);
                 $content .= ' <a href="' . $this->getUrl($route . "/" . $item->getIdentifier()) . '" >' . $this->__('Read More') . '</a>';
                 $item->setPostContent($content);
-            } elseif ((int) Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_BLOG_READMORE) != 0) {
+            } elseif ((int) Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_BLOG_READMORE) != 0) {
 
                 $content = $item->getPostContent();
-                $strManager = new Indez_Blog_Helper_Substring(array('input' => Mage::helper('blog')->filterWYS($content)));
-                $content = $strManager->getHtmlSubstr((int) Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_BLOG_READMORE));
+                $strManager = new Cmac_Blog_Helper_Substring(array('input' => Mage::helper('blog')->filterWYS($content)));
+                $content = $strManager->getHtmlSubstr((int) Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_BLOG_READMORE));
 
-                if ($strManager->getSymbolsCount() == Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_BLOG_READMORE)) {
+                if ($strManager->getSymbolsCount() == Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_BLOG_READMORE)) {
                     $content .= ' <a href="' . $this->getUrl($route . "/" . $item->getIdentifier()) . '" >' . $this->__('Read More') . '</a>';
                 }
                 $item->setPostContent($content);
@@ -159,7 +159,7 @@ class Indez_Blog_Block_Abstract extends Mage_Core_Block_Template {
 
             $page = $this->getRequest()->getParam('page');
             Mage::getSingleton('blog/status')->addEnabledFilterToCollection($collection);
-            $collection->setPageSize((int) Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_BLOG_PERPAGE));
+            $collection->setPageSize((int) Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_BLOG_PERPAGE));
             $collection->setCurPage($page);
 
             $this->setCachedCollection($collection);

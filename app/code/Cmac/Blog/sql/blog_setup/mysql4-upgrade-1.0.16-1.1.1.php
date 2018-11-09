@@ -3,9 +3,9 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
@@ -39,8 +39,8 @@ try {
 <tr>
 <td style="border-style: none; padding-right: 10px;" align="center" valign="top"><a title="Advanced Search" href="http://ecommerce.aheadworks.com/magento-extensions/advanced-search.html?utm_source=AW_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post"><img src="http://media.aheadworks.com/catalog/Advanced_Search_120_169.png" alt="Advanced Search" /></a></td>
 <td style="border-style: none;">
-<p>The <strong><a href="http://ecommerce.aheadworks.com/magento-extensions/advanced-search.html?utm_source=Indez_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post">Advanced Search  extension</a></strong> replaces native search with Sphinx, an external search engine. So search works much more faster in your store, server load is decreased, and results become more trustworthy.</p>
-<p><strong><a href="http://ecommerce.aheadworks.com/magento-extensions/advanced-search.html?utm_source=Indez_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post">Advanced Search</a></strong> is a perfect solution for search through Magento-based stores. This extension uses an external search engine Sphinx. If you have 10000 products in your store, <strong><a href="http://ecommerce.aheadworks.com/magento-extensions/advanced-search.html?utm_source=Indez_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post">Advanced Search</a></strong> will help your customers to find those which are required. If you have 1000 posts in your blog, it\'s not a problem for <strong><a href="http://ecommerce.aheadworks.com/magento-extensions/advanced-search.html?utm_source=Indez_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post">Advanced Search</a></strong> as well because it is <strong>100% compatible with Blog</strong>.</p>
+<p>The <strong><a href="http://ecommerce.aheadworks.com/magento-extensions/advanced-search.html?utm_source=Cmac_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post">Advanced Search  extension</a></strong> replaces native search with Sphinx, an external search engine. So search works much more faster in your store, server load is decreased, and results become more trustworthy.</p>
+<p><strong><a href="http://ecommerce.aheadworks.com/magento-extensions/advanced-search.html?utm_source=Cmac_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post">Advanced Search</a></strong> is a perfect solution for search through Magento-based stores. This extension uses an external search engine Sphinx. If you have 10000 products in your store, <strong><a href="http://ecommerce.aheadworks.com/magento-extensions/advanced-search.html?utm_source=Cmac_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post">Advanced Search</a></strong> will help your customers to find those which are required. If you have 1000 posts in your blog, it\'s not a problem for <strong><a href="http://ecommerce.aheadworks.com/magento-extensions/advanced-search.html?utm_source=Cmac_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post">Advanced Search</a></strong> as well because it is <strong>100% compatible with Blog</strong>.</p>
 </td>
 </tr>
 </tbody>
@@ -49,7 +49,7 @@ try {
 <tbody>
 <tr>
 <td style="border-style: none;">
-<p>In today\'s fiercely competitive business environment, a caring attitude towards customers can go a long way in creating a delightful experience for your customer. The <a href="http://ecommerce.aheadworks.com/magento-extensions/follow-up-email.html?utm_source=Indez_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post"><strong>Follow Up Email Magento extension</strong></a> is an indispensable tool to help you stay in close touch with your customers.</p>
+<p>In today\'s fiercely competitive business environment, a caring attitude towards customers can go a long way in creating a delightful experience for your customer. The <a href="http://ecommerce.aheadworks.com/magento-extensions/follow-up-email.html?utm_source=Cmac_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post"><strong>Follow Up Email Magento extension</strong></a> is an indispensable tool to help you stay in close touch with your customers.</p>
 <p>With the <a href="http://ecommerce.aheadworks.com/magento-extensions/follow-up-email.html?utm_source=AW_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post"><strong>Follow Up Email</strong></a> extension, you can make the emails automatically sent to customers on any event &ndash; abandoned cart, order obtained certain status, customer added product to wishlist, etc. This indispensable tool will help you win more sales and always stay in close touch with your consumers.</p>
 <p>Enjoy these irresistible benefits that powerful features of the <a href="http://ecommerce.aheadworks.com/magento-extensions/follow-up-email.html?utm_source=AW_Blog&amp;utm_medium=welcome_post&amp;utm_campaign=welcome_post"><strong>Follow Up Email module</strong></a> give to your ecommerce website.</p>
 </td>

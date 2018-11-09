@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Block_Manage_Comment_Edit_Form extends Mage_Adminhtml_Block_Widget_Form {
+class Cmac_Blog_Block_Manage_Comment_Edit_Form extends Mage_Adminhtml_Block_Widget_Form {
 
     protected function _prepareForm() {
         $form = new Varien_Data_Form(array(

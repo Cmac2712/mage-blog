@@ -3,12 +3,12 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
-class Indez_Blog_IndexController extends Mage_Core_Controller_Front_Action {
+class Cmac_Blog_IndexController extends Mage_Core_Controller_Front_Action {
 
     public function preDispatch() {
         parent::preDispatch();

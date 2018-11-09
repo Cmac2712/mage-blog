@@ -4,23 +4,23 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 -->
 <config>
     <modules>
-        <Indez_Blog>
+        <Cmac_Blog>
             <version>1.1.1</version><platform>ce</platform>
-        </Indez_Blog>
+        </Cmac_Blog>
     </modules>
     <admin>
         <routers>
             <adminhtml>
                 <args>
                     <modules>
-                        <blog_admin before="Mage_Adminhtml">Indez_Blog_Adminhtml</blog_admin>
+                        <blog_admin before="Mage_Adminhtml">Cmac_Blog_Adminhtml</blog_admin>
                     </modules>
                 </args>
             </adminhtml>
@@ -31,25 +31,25 @@
             <blog>
                 <use>standard</use>
                 <args>
-                    <module>Indez_Blog</module>
+                    <module>Cmac_Blog</module>
                     <frontName>blog</frontName>
                 </args>
             </blog>
         </routers>
         <layout>
             <updates>
-                <blog module="Indez_Blog">
+                <blog module="Cmac_Blog">
                     <file>blog.xml</file>
                 </blog>
             </updates>
         </layout>
         <translate>
             <modules>
-                <Indez_Blog>
+                <Cmac_Blog>
                     <files>
-                        <default>Indez_Blog.csv</default>
+                        <default>Cmac_Blog.csv</default>
                     </files>
-                </Indez_Blog>
+                </Cmac_Blog>
             </modules>
         </translate>
     </frontend>
@@ -57,11 +57,11 @@
     <adminhtml>
         <translate>
             <modules>
-                <Indez_Blog>
+                <Cmac_Blog>
                     <files>
-                        <default>Indez_Blog.csv</default>
+                        <default>Cmac_Blog.csv</default>
                     </files>
-                </Indez_Blog>
+                </Cmac_Blog>
             </modules>
         </translate>
 
@@ -151,7 +151,7 @@
         </acl>
         <layout>
             <updates>
-                <blog module="Indez_Blog">
+                <blog module="Cmac_Blog">
                     <file>indez_blog.xml</file>
                 </blog>
             </updates>
@@ -160,11 +160,11 @@
     <global>
         <models>
             <blog>
-                <class>Indez_Blog_Model</class>
+                <class>Cmac_Blog_Model</class>
                 <resourceModel>blog_mysql4</resourceModel>
             </blog>
             <blog_mysql4>
-                <class>Indez_Blog_Model_Mysql4</class>
+                <class>Cmac_Blog_Model_Mysql4</class>
                 <entities>
                     <blog>
                         <table>aw_blog</table>
@@ -219,25 +219,25 @@
             </blog_mysql4>
             <sitemap>
                 <rewrite>
-                    <sitemap>Indez_Blog_Model_Sitemap</sitemap>
+                    <sitemap>Cmac_Blog_Model_Sitemap</sitemap>
                 </rewrite>
             </sitemap>
         </models>
         <blocks>
             <blog>
-                <class>Indez_Blog_Block</class>
+                <class>Cmac_Blog_Block</class>
             </blog>
             <rss>
                 <rewrite></rewrite>
                 <drewrite>
-                    <list>Indez_Blog_Block_Rss_List</list>
+                    <list>Cmac_Blog_Block_Rss_List</list>
                 </drewrite>
             </rss>
         </blocks>
         <resources>
             <blog_setup>
                 <setup>
-                    <module>Indez_Blog</module>
+                    <module>Cmac_Blog</module>
                 </setup>
                 <connection>
                     <use>core_setup</use>
@@ -256,7 +256,7 @@
         </resources>
         <helpers>
             <blog>
-                <class>Indez_Blog_Helper</class>
+                <class>Cmac_Blog_Helper</class>
             </blog>
         </helpers>
         <events>
@@ -264,7 +264,7 @@
                 <observers>
                     <blog>
                         <type>singleton</type>
-                        <class>Indez_Blog_Controller_Router</class>
+                        <class>Cmac_Blog_Controller_Router</class>
                         <method>initControllerRouters</method>
                     </blog>
                 </observers>
@@ -339,7 +339,7 @@
     <phpunit>
         <suite>
             <modules>
-                <Indez_Blog />
+                <Cmac_Blog />
             </modules>
         </suite>
     </phpunit>

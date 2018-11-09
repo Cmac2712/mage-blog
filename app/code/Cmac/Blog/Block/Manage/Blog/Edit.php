@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Block_Manage_Blog_Edit extends Mage_Adminhtml_Block_Widget_Form_Container {
+class Cmac_Blog_Block_Manage_Blog_Edit extends Mage_Adminhtml_Block_Widget_Form_Container {
 
     public function __construct() {
         parent::__construct();

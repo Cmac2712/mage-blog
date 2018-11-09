@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Helper_Data extends Mage_Core_Helper_Abstract {
+class Cmac_Blog_Helper_Data extends Mage_Core_Helper_Abstract {
     const XML_PATH_ENABLED = 'blogconfig/blog/enabled';
     const XML_PATH_TITLE = 'blogconfig/blog/title';
     const XML_PATH_MENU_LEFT = 'blogconfig/blog/menuLeft';
@@ -77,7 +77,7 @@ class Indez_Blog_Helper_Data extends Mage_Core_Helper_Abstract {
     }
 
     public function getEnabled() {
-        return Mage::getStoreConfig('blogconfig/blog/enabled') && $this->extensionEnabled('Indez_Blog');
+        return Mage::getStoreConfig('blogconfig/blog/enabled') && $this->extensionEnabled('Cmac_Blog');
     }
 
     public function getUserEmail() {

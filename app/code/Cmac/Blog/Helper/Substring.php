@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Helper_Substring extends Varien_Object {
+class Cmac_Blog_Helper_Substring extends Varien_Object {
     const ALLOWED_TAGS = 'a,img,ol,ul,li,p,span,div,b,h1,h2,h3,h4,h5,i,u,strong,iframe,br';
 
     protected $_input = null;

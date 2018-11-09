@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Block_Tags extends Mage_Core_Block_Template {
+class Cmac_Blog_Block_Tags extends Mage_Core_Block_Template {
 
     public function _construct() {
         parent::_construct();
@@ -31,7 +31,7 @@ class Indez_Blog_Block_Tags extends Mage_Core_Block_Template {
                 ->where('main_table.store_id = ? OR main_table.store_id = 0', Mage::app()->getStore()->getId())
                 ->order(array('tag_final_count DESC',
                     'tag'))
-                ->limit(Mage::getStoreConfig(Indez_Blog_Helper_Config::XML_TAGCLOUD_SIZE))
+                ->limit(Mage::getStoreConfig(Cmac_Blog_Helper_Config::XML_TAGCLOUD_SIZE))
                 ->group('tag');
 
         foreach ($coll as $item) {

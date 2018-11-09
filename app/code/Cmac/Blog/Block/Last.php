@@ -3,13 +3,13 @@
  * INDEZ BLOG MODULE
  *
  * @category    Module
- * @package     Indez_Blog
- * @copyright   Copyright (c) 2012 Indez Ltd. (http://www.indez.com)
- * @author Steven Richardson (steven.richardson@indez.com)
+ * @package     Cmac_Blog
+ * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
+ * @author Craig MacIntyre (steven.richardson@indez.com)
  */
 
 
-class Indez_Blog_Block_Last extends Mage_Core_Block_Template implements Mage_Widget_Block_Interface {
+class Cmac_Blog_Block_Last extends Mage_Core_Block_Template implements Mage_Widget_Block_Interface {
 
     protected function _toHtml() {
         $this->setTemplate('aw_blog/widget_post.phtml');
