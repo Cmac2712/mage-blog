@@ -1,0 +1,42 @@
+<div class="block block-blog">
+    <div class="block-title">
+        <strong><span><?php echo Mage::getStoreConfig('blog/blog/title'); ?></span></strong>
+    </div>
+	<div class="block-content">
+	<div class="menu-social">
+		<h5>Connect with Us</h5>
+		<ul>
+			<li><a href="http://twitter.com/ceiger" class="twitter">Twitter</a></li>
+			<li><a href="https://www.facebook.com/richdynamix" class="facebook">Facebook</a></li>
+			<li><a href="http://youtube.com/user/ceiger" class="youtube">YouTube</a></li>
+			<li><a href="http://ceiger.com/blog/rss" class="rss">RSS</a></li>
+			<li><a href="#" class="share addthis addthis_button">Share</a></li>
+			<li><a href="/contacts" class="email">email</a></li>
+		</ul>
+	</div>
+<?php if ($posts = $this->getRecent()): ?>
+	<div class="menu-recent">
+		<h5><?php echo Mage::helper('blog')->__('Recent Posts');?></h5>
+		<ul>
+		<?php foreach ($posts as $post): ?>
+			<li><a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle();?></a></li>
+		<?php endforeach; ?>
+       	</ul>
+	</div>	
+<?php endif; ?>
+
+<?php if($this->getCategories()->count() && Mage::getStoreConfig('blog/menu/category')): ?>  
+	<div class="menu-categories">
+        <h5><?php echo Mage::helper('blog')->__('Categories');?></h5>
+        <ul>
+<?php $cats = $this->getCategories(); ?>
+<?php foreach ($cats as $cat): ?>
+		<li><a href="<?php echo $cat->getAddress(); ?>" ><?php echo $cat->getTitle();?></a></li>
+<?php endforeach; ?>
+    	</ul>
+	</div>	
+<?php endif;?>
+		
+		<?php echo $this->getChildHtml('blog_tags');?>
+	</div>
+</div>
