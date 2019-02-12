@@ -5,7 +5,7 @@
  * @category    Module
  * @package     Cmac_Blog
  * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
- * @author Craig MacIntyre (steven.richardson@indez.com)
+ * @author Craig MacIntyre ()
  */
 
 class Cmac_Blog_Block_Manage_Blog_Edit_Tab_Form extends Mage_Adminhtml_Block_Widget_Form {

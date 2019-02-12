@@ -5,7 +5,7 @@
  * @category    Module
  * @package     Cmac_Blog
  * @copyright   Copyright (c) 2012 Craig MacIntyre (http://www.indez.com)
- * @author Craig MacIntyre (steven.richardson@indez.com)
+ * @author Craig MacIntyre ()
  */
 
 class Cmac_Blog_Adminhtml_Manage_DisqusController extends Mage_Adminhtml_Controller_Action {
